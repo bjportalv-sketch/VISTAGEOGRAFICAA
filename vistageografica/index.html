@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GEOVISOR - Unidad de Saneamiento y Catastro</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    html,body,#map { height:100%; margin:0; padding:0; }
+    #sidebar { position:absolute; top:10px; left:10px; z-index:1000; background:white; padding:8px; border-radius:6px; box-shadow:0 1px 6px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h3>GEOVISOR</h3>
+    <label><input type="checkbox" id="toggleParcelas" checked> Parcelas</label>
+  </div>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
